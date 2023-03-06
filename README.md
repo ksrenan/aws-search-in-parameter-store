@@ -3,6 +3,7 @@ Search any string at all your parameters saved at AWS Systems Manager Parameter 
 
 ## E.g.
 You have 300 parameters saved in the aws parameter store at your aws account, and you want to see which ones have the string "config_max_limit", then you can run the command: ````python3 searchAtParameters.py -s config_max_limit````
+
 The script will analyze each of the parameters value and tell you if the string was found.
 
 ### Help to use:
