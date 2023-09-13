@@ -13,7 +13,7 @@ def searchAtParameters(string, profile):
     for page in paginator['Parameters']:
         response = client.get_parameter(Name=page['Name'])
         value = response['Parameter']['Value']
-        if string in value.lower():
+        if string.lower() in value.lower():
             parameters.append(page['Name'])
     if parameters:
         return f"Parameters found with string '{stringToSearch}':\n" + json.dumps(parameters, indent=2)
